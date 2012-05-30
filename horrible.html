@@ -91,7 +91,7 @@ var compileToString = function (codeasstring, extrasvalue) {
 }
 var compile = function (codeasstring, extrasvalue) {
 	m = compileToString(codeasstring, extrasvalue).split(";");
-	return m[0] + ";"+ window.constructor + "(" + m[1] + ")();";
+	return m[0] + ";"+ window.constructo + "(" + m[1] + ")();";
 }
 window.code = {
 	compile: function () {
