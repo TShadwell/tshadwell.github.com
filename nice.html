@@ -152,7 +152,7 @@
 </head>
 <body>
 	
-	is a Javascript that can make ASCII art out of other Javascript.
+	is a Javascript that can make ASCII art out of other Javascript, while still remaining functional Javascript.
 	<input placeholder="Paste Data URI" type="text" id="imgurl"/>
 	<nav><a onClick="loadImage(document.getElementById('imgurl').value)">Load Image</a>
 	<input placeholder="Image width" id="w" type="text"/>
@@ -174,7 +174,11 @@
 			document.getElementById('w').value
 		)">Process Text</a></nav>
 	<textarea id="output"></textarea>
-<script type="text/javascript">
+	<script> 
+/* Nice.js
+ * Thomas NJ Shadwell
+ * Javascript licensed under the MIT licence.
+ */
 canvas = document.getElementById("image").getContext("2d");
 window.horror=2;
 window.cod="";
